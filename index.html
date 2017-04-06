@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <title>Numero 1</title>
+    <meta charset='UTF-8' >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel='stylesheet' href='1.numero.css'>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="fastclick.js"></script>
+    <script type="text/javascript" src="1.numero.js"></script>
+</head>
+<body>
+<h3>Standard Default Input</h3>
+<input type='text' id='standard-default-input' class='example' placeholder="Click!">
+
+<h3>Standard Number Input</h3>
+<input type='number' pattern='\d*' id='standard-number-input' class='example' placeholder="Click!">
+
+<h3>Custom Number Input</h3>
+<input type="text" class='numero' id='input-test' placeholder="Click!">
+
+<object class='numero closed'><table><thead><tr>
+    <td class='controls move'><div class='bracket_wrap' id="previous"><svg version="1.1" class='c bracket left active' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 54" style="enable-background:new 0 0 30 54;" xml:space="preserve"><polygon points="0,26.86344 26.8635,0 30.09781,3.23431 6.32377,27.0083 30.22602,50.91054 27.13656,54 2.10794,28.97139 2.10794,28.97139 "/></svg></div><div class='bracket_wrap' id="next"><svg version="1.1" class='c bracket right' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 54" style="enable-background:new 0 0 30 54;" xml:space="preserve"><polygon points="30.22602,26.86344 3.36251,0 0.1282,3.23431 23.90224,27.0083 0,50.91054 3.08946,54 28.11807,28.97139
+	28.11807,28.97139 "/></svg></div></td>
+    <td class='c unit'><!-- Inch MM --></td>
+    <td class='c controls done'>Done</td>
+</tr>
+</thead>
+    <tr>
+        <td class='n'>1</td>
+        <td class='n'>2</td>
+        <td class='n'>3</td>
+    </tr>
+    <tr>
+        <td class='n'>4</td>
+        <td class='n'>5</td>
+        <td class='n'>6</td>
+    </tr>
+    <tr>
+        <td class='n'>7</td>
+        <td class='n'>8</td>
+        <td class='n'>9</td>
+    </tr>
+    <tr>
+        <td class='c decimal'>•</td>
+        <td class='n'>0</td>
+        <td class='c backspace'><svg version="1.1" id="delete-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 66 49" style="enable-background:new 0 0 66 49;" xml:space="preserve">
+<path d="M53.95001,0H23.5L2.92999,20.8219l-2.21002,2.32184c-0.98993,0.98999-0.98993,2.57373-0.00995,3.57373L2.92999,28.935
+	L22.67999,49h31.27002C60.62,49,66,43.81,66,37.14001V12.27997C66,5.62,60.62,0,53.95001,0z M52.8573,35.1427l-1.7146,1.71454
+	L40.5,26.21454l-10.6427,10.6427l-1.7146-1.71454l10.64276-10.64276L28.1427,13.85724l1.7146-1.71454L40.5,22.7854l10.6427-10.6427
+	l1.7146,1.71454l-10.6427,10.6427L52.8573,35.1427z"/>
+</svg></td>
+    </tr>
+</table>
+</object>
+</body>
+</html>

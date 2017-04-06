@@ -1,0 +1,11 @@
+{
+  "name": "numero",
+  "version": "1.0.0",
+  "description": "Numeral keyboard (from iOS)",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Henry Nagle <hfn@me.com>",
+  "license": "WTFPL"
+}

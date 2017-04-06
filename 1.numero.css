@@ -1,0 +1,301 @@
+/*
+  Todo
+
+  - fallback for hairline borders
+
+  - fading of done and forward/prev
+
+
+  - new decimal icon?
+
+  -   delete-left svg is almost right..
+      ⌫ need to add rounding and fix width of X
+
+  Credits:
+
+  hairline borders
+   http://n12v.com/css-retina-and-physical-pixels/
+
+
+
+*/
+body {
+
+}
+
+#input-test,
+.example {
+    /*    background-color: #CCC; */
+    display: block;
+    width: 80%;
+    font-size: 2em;
+    line-height: 1.4;
+    font-family: Monaco, monospace;
+    border: 2px solid #ccc;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0 auto;
+    box-shadow: none;
+    outline: none;
+    -webkit-box-shadow: none;
+}
+
+#input-test.Amphetamine {
+    border: 2px solid blue;
+}
+#input-test:focus {
+    outline: none;
+}
+
+#input-test:before {
+    content: 'inch';
+    color: black;
+    display: block;
+    left: -2em;
+}
+
+.bracket_wrap {
+    display: inline-block;
+    /*    min-height: 100%; */
+    padding: 10px 5px 10px 5px;
+    /*    background: red; */
+}
+
+.bracket {
+    height: 18px;
+    fill: #bfbfc0;
+}
+
+
+.bracket.active {
+    fill: #007aff;
+}
+.bracket.active:active {
+    fill: #bed8f4;
+}
+
+.bracket.right {
+    margin-left: 23px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.test {
+    color: red;
+}
+
+body {
+    background: white;
+}
+
+input.numero {
+    display: block;
+    margin: 20px auto;
+}
+h3 {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: Monaco, monospace;
+    /*    border: 2px solid #ccc; */
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+object.numero {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    color: #050505;
+
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-property: cubic-bezier(0,0,.58,1); /*.25,.1,.25,1*/
+
+    /*    -webkit-transform: translate3d(0,0,0); */
+    transform: translate3d(0,0,0);
+}
+
+object.numero.closed {
+    -webkit-transform: translate3d(0,264px,0);
+    /*    bottom: -262px; */
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    border-spacing: 0;
+
+    border-width: 1px;
+    border-image: url('8f9498.gif') 2 repeat;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+tr td {
+    width: 33%;
+    height: 55px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Helvetica Neue','San Francisco Display';
+    font-weight: 300;
+    vertical-align: middle;
+
+    box-sizing: border-box;
+}
+
+tr td {
+    border-width: 1px;
+    border-image: url('8c8c8c.gif') 2 repeat;
+
+}
+
+
+
+/* columns…… */
+td:nth-of-type(1){
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+}
+td:nth-of-type(2){
+    border-top: 0;
+}
+
+td:nth-of-type(3){
+    border-left:0;
+    border-top:0;
+    border-right:0;
+}
+
+/* bottom row */
+tr:nth-of-type(4) td {
+    border-bottom: 0;
+}
+
+
+thead {
+    background: #eef0f2;
+}
+
+thead tr td{
+    border: 0;
+    font-size: 15px;
+    height: 43px;
+}
+
+thead tr {
+    border-width: 1px;
+    border-image: url('8f9498.gif') 2 repeat;
+    border-bottom: none;
+    border-left: none;
+}
+
+
+
+/******************************************
+  Individual elements
+******************************************/
+.decimal,
+.backspace {
+    background: #d1d5db;
+    color: #000000;
+}
+.decimal span {
+    color: #bfbfc0;
+}
+
+.backspace {
+    /*
+       background-image: url('delete-left.png');
+       background-size: 33px auto;
+       background-repeat: no-repeat;
+       background-position: center center;
+    */
+}
+
+#delete-left {
+    height: 15px;
+    line-height: 18px;
+}
+
+
+.done {
+    color: #007aff;
+    text-align: right;
+    padding-right: 13px;
+    font-weight: 500;
+}
+
+.move {
+    color: #bebfc0;
+    text-align: left;
+    padding-left: 20px;
+    background: #eef0f2;
+}
+
+
+
+/*
+      Active Classes
+*/
+tr td:active {
+    background-color: #d1d6db;
+}
+.done:active {
+    background-color: inherit;
+    color: #bed9f5;
+}
+.decimal:active,
+.backspace:active {
+    background-color: white;
+}
+.unit:active,
+.move:active {
+    background: inherit;
+}
+
+/*
+   iPhone 6+ Measurements (in @2x)
+
+   number pad
+   ----------
+      font-size: 85px
+
+   'done' text
+   -----------
+      font-size: 44px;
+
+
+   Measurements taken using Adobe® Photoshop® CC on a MacBook Pro 15" Retina (225 ppi)
+
+   Measured device is iPhone 6 Plus (190 ppi)
+
+
+
+
+
+*/
+
+
+
+/* Numbers! */
+
+.n, .c, #previous{
+    -webkit-user-select: none;
+    cursor: pointer;
+}
